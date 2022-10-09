@@ -26,80 +26,153 @@ Additional learnings:
 Files added for various repositories:
 
 Repository 1
+
 realms-contracts
+
 ├── contracts
+
 │   ├── settling_game
+
 │   │   ├── interfaces
+
 │   │   │   └── IMonsters.cairo   (interface contract to Monsters_ERC721_Mintable.cairo)
+
 │   │   ├── modules
+
 │   │   |   ├── monsterrampage
+
 │   │   │   |   └── constants.cairo         (constants used in Monster Rampage module)
+
 │   │   │   |   └── library.cairo           (library which contains the logic in Monster Rampage module)
+
 │   │   │   |   └── MonsterRampage.cairo    (contract for Monster Rampage module)
+
 │   │   ├── tokens
+
 │   │   │   └── Monsters_ERC721_Mintable.cairo  (contract which stores the game state for our Monsters statistics)
+
 ├── tests
+
 │   ├── protostar
+
 │   │   ├── settling_game
+
 │   │   |   ├── monsterrampage
+
 │   │   │   |   └── test_monster_rampage.cairo  (test file used in Monster Rampage module)
+
 └── Monsters-README.txt                 (readme file detailing work done for this hackathon)
+
 └── Monsters-Contract-Interaction.pdf   (diagram showing the interaction between the various contracts)
 
+
 Repository 2
+
 realms-react
+
 ├── atlas
+
 │   ├── src
+
 │   │   ├── components
+
 │   │   |   ├── cards
+
 │   │   |   |   ├── monsters
+
 │   │   │   |   |   └── MonsterCard.tsx   (monster details showing its statistics)
+
 │   │   |   ├── filters
+
 │   │   │   |   └── MonstersFilter.tsx
+
 │   │   |   ├── panels
+
 │   │   |   |   ├── Monsters
+
 │   │   |   |   |   ├── details
+
 │   │   │   |   |   |   └── index.tsx
+
 │   │   │   |   |   |   └── Overview.tsx
+
 │   │   │   |   └── MonstersPanel.tsx
+
 │   │   |   ├── tables
+
 │   │   │   |   └── MonsterOverviews.tsx
+
 │   │   ├── constants
+
 │   │   |   └── monster.ts
+
 │   │   ├── context
+
 │   │   |   └── MonsterContext.tsx
+
 │   │   ├── graphql
+
 │   │   |   ├── Monster
+
 │   │   |   |    └── GetMonster.graphql
+
 │   │   |   |    └── GetMonsters.graphql
+
 │   │   |   |    └── Monster.fragment.graphql
+
 │   │   ├── hooks
+
 │   │   |   ├── settling
+
 │   │   |   |    └── useMonsterRampage.tsx
+
 │   │   |   |    └── useMonsters.tsx
+
 │   │   ├── pages
+
 │   │   |   ├── monster
+
 │   │   |   |    └── index.tsx
+
 │   │   ├── shared
+
 │   │   |   ├── Getters
+
 │   │   |   |    └── Monster.tsx
 
+
 Repository 3
+
 starknet-indexer
+
 ├── app
+
 │   ├── entities
+
 │   │   ├── settling
+
 │   │   │   └── Monsters.ts   (monster model)
+
 │   ├── indexer
+
 │   │   ├── settling
+
 │   │   │   └── MonsterIndexer.ts   (listener for all monster events and update graphql database)
+
 │   ├── resolver
+
 │   │   ├── settling
+
 │   │   │   └── MonsterResolver.ts  (populate the data for fields in the schema)
+
 │   │   ├── types
+
 │   │   |   ├── settling
+
 │   │   │   |   └── MonstersFilterInput.ts
+
 │   │   │   |   └── MonsterInputs.ts
+
 │   │   │   |   └── MonsterOrderByInput.ts
 
 

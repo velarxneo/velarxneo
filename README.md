@@ -7,10 +7,10 @@ We are proposing to build an expansion module named “Monsters” on Realms Ete
 
 Features Completed
 1. Monsters can be minted and it spawns randomly across the 8000 realms.    
-2. Monster can attack the realm which it is spawned on and reduce the realms' raidable resources
-    2.1 Monster fights the defending army of the realm
-    2.2 Monster reduces its HP and increases its XP depending on the battle outcome
-    2.3 Monster is dead when HP reduces below zero
+2. Monster can attack the realm which it is spawned on and reduce the realms' raidable resources<br>
+    2.1 Monster fights the defending army of the realm<br>
+    2.2 Monster reduces its HP and increases its XP depending on the battle outcome<br>
+    2.3 Monster is dead when HP reduces below zero<br>
 3. All game state (Monsters' statistics) and game logic are on-chain
 4. All game state changes are accompanied with Events being emited
 5. View the demo video at https://youtu.be/GusnqytZNB8
